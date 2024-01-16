@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kantine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Kassasysteem Kantine</h1>
+    </header>
+    <br><br>
+    <div class="content">
+        <div class="menulijst">
+            <h2>Menulijst</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Artikel</th>
+                        <th>Aantal</th>
+                        <th>Prijs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><label for="water">Water</label></td>
+                        <td><input onchange="calculate()" type="number" id="water" min="0"></td>
+                        <td><label for="waterPrijs">€ 1,50</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cola">Cola</label></td>
+                        <td><input onchange="calculate()" type="number" id="cola" min="0"></td>
+                        <td><label for="colaPrijs">€ 2,25</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="broodjeKaas">Broodje kaas</label></td>
+                        <td><input onchange="calculate()" type="number" id="broodjeKaas" min="0"></td>
+                        <td><label for="broodjeKaasPrijs">€ 3,50</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="hamburger">Hamburger</label></td>
+                        <td><input onchange="calculate()" type="number" id="hamburger" min="0"></td>
+                        <td><label for="prijsHamburger">€ 4,75</label></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button onclick="reset()">Opnieuw</button>
+        </div>
+        <div class="bestelling">
+            <h2>Bestelling</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Artikel</th>
+                        <th>Aantal</th>
+                        <th>Prijs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="waterArtikel"></td>
+                        <td id="aantalWater"></td>
+                        <td id="prijsWater"></td>
+                    </tr>
+                    <tr>
+                        <td id="colaArtikel"></td>
+                        <td id="aantalCola"></td>
+                        <td id="prijsCola"></td>
+                    </tr>
+                    <tr>
+                        <td id="broodjeKaasArtikel"></td>
+                        <td id="aantalBroodjeKaas"></td>
+                        <td id="prijsBroodjeKaas"></td>
+                    </tr>
+                    <tr>
+                        <td id="hamburgerArtikel"></td>
+                        <td id="aantalHamburger"></td>
+                        <td id="prijsHamburger"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td id="totaalPrijs"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

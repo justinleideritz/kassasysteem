@@ -1,0 +1,100 @@
+/* Reset some default browser styles */
+body, h1, h2, table {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  
+  /* Style the content container */
+  .content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  /* Style the menu list */
+  .menulijst {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .menulijst h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the table in the menu list */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Style the "Opnieuw" button */
+  button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  /* Style the bestelling (order) section */
+  .bestelling {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .bestelling h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the table in the bestelling section */
+  .bestelling table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .bestelling table th, .bestelling table td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  #totaalPrijs {
+    color: white;
+    background-color: #333;
+    border-radius: 5px;
+    width: 110px;
+  }
